@@ -21,8 +21,7 @@ namespace VD2
             foreach (ElementId e1 in selectElements)//Duyệt danh sách các phần tử được chọn
             {
                 Element element = uidoc.Document.GetElement(e1);//Lấy thông tin của phần tử
-                list += element.Id + "\n"; //Thêm id của phần tử vào danh sách
-
+                list += element.Id + "\n"; //Thêm id của phần tử
             }
             MessageBox.Show(list);
             return Result.Succeeded;
